@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <form class="msg_form">
+
+        <input class="" type="button" id="to_main" value="Назад">
+        <td align="left">
+                <img src="images/empty_user.jpg" id="user_image" width="414" height="58" alt="Рецепты HTML">
+            </td>
+
+        <h1>
+                
+            From:
+
+
+            <span id="sender"></span>
+
+            <h1>
+                <div>
+
+                    
+
+                    <div class="about">
+                        <input class="btn btn-primary" type="button" id="add_recipient" value="Да">
+                        
+                    </div>
+                    <div class="about">
+                        <input class="form-control" type="text" id="recipient_input" placeholder="Enter username. . .">
+                        <div id="search_advice_wrapper"></div>
+                    </div>
+
+                </div>
+                <h1>To:
+                    <span id="recipient"></span>
+                    <h1>
+
+                        <div>
+
+                            <div class="about">
+                                <input class="btn btn-primary" type="button" id="msg_send" value="Отправить">
+                            </div>
+                            <div class="about">
+                                <input class="form-control" type="text" id="msg_text" placeholder="Enter your message. . .">
+                                <input class="btn btn-default btn-file" type="file" id="profilePhotoFileUpload">
+                            </div>
+                        </div>
+                    </h1>
+                </h1>
+            </h1>
+        </h1>
+
+    </form>
+
+    <div id="win" style="display:none;">
+        <div class="overlay"></div>
+           <div class="visible">
+             <h2>Заголовок окна</h2>
+               <div class="content">
+                 <p>
+                     <img src = 'images/empty_user.jpg' id="bigger_image" onClick="getElementById('win').style.display='none';">
+
+                 </p>
+                 <p></p>
+               </div>
+             <button type="button" onClick="getElementById('win').style.display='none';">закрыть</button>
+         </div>
+     </div>
+ 
+
+    <div class="shoutbox">
+
+        <h2>messages with </h2>
+        <!--Сюда чаты и последние сообщения-->
+        <ul class="shoutbox-content" id="chat-container"></ul>
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/parse.js"></script>
+    <script src="js/chat.js"></script>
+  
+</body>
+
+</html>

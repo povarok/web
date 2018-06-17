@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <h1>Hello,
+            <div class="about">
+            <input class="btn about btn-primary logout " id="logout" value="Logout" type="submit">
+        </div>
+        <span id="username"></span>
+        
+        <img src="images/empty_user.jpg" id="user_image" height="150px">
+    </h1>
+    <h1>
+            <div class="about">
+                    <center>
+                        <input class="btn btn-primary" type="button" id="new_dialog" value="Добавить беседу">
+                    </center>
+                    </div>
+                    <div class="about">
+            <input class="form-control" type="text" id="search" placeholder="Введите пользователя" >
+        </div>
+        
+    </h1>
+    <div id="search_advice_wrapper"></div>
+    <div class="shoutbox">
+
+        <h2>Your chats </h2>
+        <!--Сюда чаты и последние сообщения-->
+        <ul class="shoutbox-content" id="chat-container"></ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/parse.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
